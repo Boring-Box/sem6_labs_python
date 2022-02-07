@@ -113,7 +113,7 @@ def quick_sort(nums):
 
 #----------------------------------------------------------------
 
-lists_sizes = [100, 1000, 3000, 5000, 7000]
+lists_sizes = [100, 1000, 3000, 5000, 7000, 10000, 20000]
 nums_lists = [genList(x) for x in lists_sizes]
 
 sort_times = {
@@ -188,7 +188,7 @@ for key, value in sort_times.items():
 
 fig, ax = plt.subplots()
 ax.set_xlabel("Lists sizes")
-ax.set_ylabel("Sorting time")
+ax.set_ylabel("Sorting time, s")
 
 print('{:>30} {}'.format('Lists sizes:', listStringization(lists_sizes)))
 for key, value in sort_times.items():
